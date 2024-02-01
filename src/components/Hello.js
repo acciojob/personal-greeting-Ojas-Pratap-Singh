@@ -11,9 +11,10 @@ const Hello = () => {
 
   return (
     <div>
-        <input type="text" value={query} onChange={handleChange}/> 
+         <p>Enter your name: </p>
+        <input   onChange={handleChange}/> 
         {
-            query && <p>Hello {query}!</p>
+            <p>{query && `Hello ${query}!`}</p>
         }
     </div>
   )
