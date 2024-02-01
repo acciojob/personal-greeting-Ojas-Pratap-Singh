@@ -11,7 +11,6 @@ const Hello = () => {
 
   return (
     <div>
-        <p>Enter your name:</p>
         <input type="text" value={query} onChange={handleChange}/> 
         {
             query && <p>Hello {query}!</p>
